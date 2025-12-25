@@ -16,8 +16,9 @@ article_text = docs[0].page_content
 # %%
 result = summarizer(article_text[:2000], min_length=20, max_length=80, do_sample=False)
 result[0]['summary_text']
+print(result[0]['summary_text'])
 # %% number of characters
 len(result[0]['summary_text'].split(' '))
-
+print(len(result[0]['summary_text'].split(' ')))
 
 # %%
